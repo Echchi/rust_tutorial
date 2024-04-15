@@ -1,0 +1,1 @@
+/home/echichi/projects/rust-starter/03_common_programming/data_type_arr_out_of_bounds/target/debug/data_type_arr_out_of_bounds: /home/echichi/projects/rust-starter/03_common_programming/data_type_arr_out_of_bounds/src/main.rs
