@@ -99,4 +99,5 @@ fn makes_copy(some_integer : i32){  // some_integer 가 스코프 안에 등장
 fn gives_ownership() -> String {    // gives_ownership은 자신의 반환값을 자신의 호출자 함수로 이동시킬 예정
     let some_string = String::from("✉️");   // some_string 이 스코프 안에 등장
     some_string     // some_string 이 반환되고 호출자 함수 쪽으로 이동
+    
 }
