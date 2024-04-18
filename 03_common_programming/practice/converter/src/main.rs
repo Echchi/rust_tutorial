@@ -9,7 +9,7 @@ fn main() {
 
     io::stdin()
         .read_line(&mut input)
-        .expect("Failed to read line");
+        .expect("Please enter a valid number");
 
     let input = input.trim();
 
