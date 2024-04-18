@@ -14,12 +14,12 @@
 
 ### ch03
 - **03_common_programming**
-  - 변수와 가변성 : variables
-  - 데이터 타입 : data_type
-    * out of bounds : data_type_arr_out_of_bounds   
-  - 함수 : function
-  - 주석 : comment
-  - 제어 흐름문 : control-flow
+  - variables : 변수와 가변성
+  - data_type : 데이터 타입
+    * : data_type_arr_out_of_bounds : out of bounds   
+  - function : 함수
+  - comment : 주석
+  -  control-flow : 제어 흐름문
 - **practice**
   - converter
   - fibonacci
