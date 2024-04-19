@@ -86,7 +86,6 @@ fn main() {
     let gift = String::from("🎁");          // gift가 스코프 안에 등장
 
     let final_receiver = takes_and_gives_back(gift);    // gift가 takes_and_gives_back로 이동되는데
-
 }
 
 fn takes_ownership(some_string: String) {   // some_string이 스코프 안에 등장
