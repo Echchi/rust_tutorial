@@ -28,4 +28,6 @@
 ### ch04
 - **04_ownership**
   - ownership : 소유권 정의
+  - references-and-borrowing : 참조와 대여
+  - 
     
