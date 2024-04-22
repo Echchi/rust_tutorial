@@ -86,7 +86,15 @@ fn main() {
     let gift = String::from("🎁");          // gift가 스코프 안에 등장
 
     let final_receiver = takes_and_gives_back(gift);    // gift가 takes_and_gives_back로 이동되는데
-}
+                                                         // 이 함수 또한 자신의 반환 값을 final_receiver 로 이동
+
+    let tmp_string = String::from("I'll be back");
+
+    let (resuse, len) = caclulate_length(tmp_string);
+
+    println!("The length of '{}' is {}.", resuse, len)
+
+}   // receiver, final_receiver 버려짐, gift 는 이동되어 아무일 X,
 
 fn takes_ownership(some_string: String) {   // some_string이 스코프 안에 등장
     println!("takes_ownership fn takes '{}' ownership ", {some_string});
@@ -99,5 +107,13 @@ fn makes_copy(some_integer : i32){  // some_integer 가 스코프 안에 등장
 fn gives_ownership() -> String {    // gives_ownership은 자신의 반환값을 자신의 호출자 함수로 이동시킬 예정
     let some_string = String::from("✉️");   // some_string 이 스코프 안에 등장
     some_string     // some_string 이 반환되고 호출자 함수 쪽으로 이동
-    
+}
+
+fn takes_and_gives_back(some_string : String) -> String {   // some_string이 스코프 안으로 등장
+    some_string     // some_string 이 반환되고 호출자 함수 쪽으로 이동
+}
+
+fn caclulate_length (s : String) -> (String, usize){
+    let length = s.len();
+    (s, length)
 }
