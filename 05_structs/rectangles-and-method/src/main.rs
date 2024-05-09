@@ -10,13 +10,24 @@ impl Reactangle{
     }
 }
 
+impl Reactangle{
+    fn can_hold(&self, other : &Reactangle) -> bool {
+        self.width > other.width && self.height > other.height
+    }
+}
+
 fn main() {
-   let scale = 2;
+   // let scale = 2;
    let rect1 = Reactangle{
        width : 30,
        // width: dbg!(30 * scale), // 타입에 대한 보기 좋은 Debug 포맷 제공
        height : 50,
    };
+
+    let rect2 = Reactangle{
+        width : 30,
+        height : 20,
+    };
 
     // println!("👀 react1 is {} 👀", rect1);
     // the trait `std::fmt::Display` is not implemented for `Reactangle
@@ -27,6 +38,7 @@ fn main() {
 
     // 리팩토링
     println!("👀 The area of the rectangle is {} square pixels 👀", rect1.area());
+    println!("👀 Can rect1 hold rect2? {} 👀", rect1.can_hold(&rect2));
 }
 
 // fn area(reactangle: &Reactangle) -> u32{

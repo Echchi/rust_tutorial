@@ -30,4 +30,13 @@
   - ownership : 소유권 정의
   - references-and-borrowing : 참조와 대여
   - slices : 슬라이스
+  
+### ch05
+- **05_structs**
+  - rectangles and method : 구조체 및 메서드
+
+### ch06
+- **06_enum**
+  - enums : 열거형
+  - enum_match : 패턴 매칭
     
