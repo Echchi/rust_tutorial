@@ -1,14 +1,4 @@
-mod front_of_house{
-    pub mod hosting{
-       pub fn add_to_waitlist(){}
-        fn seat_at_table(){}
-    }
-    mod serving{
-        fn take_order(){}
-        fn serve_order(){}
-        fn take_payment(){}
-    }
-}
+mod front_of_house;
 
 /*
     모듈 트리 구조
@@ -77,4 +67,40 @@ pub fn eat_at_restaurant(){
     let order1 = back_of_house::Appetizer::Soup;
     let order1 = back_of_house::Appetizer::Salad;
 
+    hosting::add_to_waitlist();
+
 }
+
+mod customer{
+    use crate::front_of_house::hosting;
+    pub fn eat_at_restaurant(){
+        hosting::add_to_waitlist();
+    }
+}
+
+
+// use 키워드를 사용하여 단축경로 사용 가능 (심볼릭링크와 유사)
+// use crate::front_of_house::hosting;
+pub use crate::front_of_house::hosting; // 다시 내보내기
+/*
+    use crate::front_of_house::hosting::add_to_waitlist;
+    라고 구체적으로 선언하지 않은 이유!
+    - 함수 호출 시 부모 모듈을 특정하면 전체 경로를 반복하는 것을 최소화
+    - 로컬에 정의되어있지 않음을 명시
+    - 반명 구조체나 열거형 등의 타 아이템을 가져올 때는 전체 경로로 작성
+    - 이름이 중복될 때는 as 키워드로 새로운 이름 제공
+ */
+/*
+use std::cmp::Ordering;
+use std::io;
+
+use std::{cmp::Ordering, io}; // 중첩 경로 사용 가능
+
+use std::io;
+use std::to::Write;
+
+use std::io::{self, Write}; // 중첩 경로 사용 가능
+
+use std::collections::*; // 글롭 연산자로 경로 안에 정의된 모든 공개 아이템 사용 가능
+
+ */
