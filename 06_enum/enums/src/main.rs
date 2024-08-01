@@ -18,7 +18,7 @@ enum IpAddr {   // 각 열거형 배리언트에 데이터를 직접 넣는 방�
 }
 
 // < Option 열거형 >
-enum Option<T> {
+enum MyOption<T> {
     None,
     Some(T),
 }

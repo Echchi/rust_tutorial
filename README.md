@@ -39,5 +39,20 @@
 - **06_enum**
   - enums : 열거형
   - enum_match : 패턴 매칭
-  - if_let
+  - if_let : if let
+
+### ch07
+- **07_packages_crates,modules**
+  - packages_crates : 패키지, 크레이트
+  - modules_scope : 모듈, 스코프
+      - backyard : 모듈, 스코프
+      - restaurant : 경로, use, 모듈 분리
+
+### ch08
+- **07_common_collections**
+  - vectors : 벡터
+  - strings : 문자열
+  - hashmap : 해시맵
+
+
     
