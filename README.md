@@ -53,6 +53,10 @@
   - vectors : 벡터
   - strings : 문자열
   - hashmap : 해시맵
+- **practice**
+  - median_mod
+  - pig_latin
+  - department
 
 
     
