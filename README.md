@@ -49,7 +49,7 @@
       - restaurant : 경로, use, 모듈 분리
 
 ### ch08
-- **07_common_collections**
+- **08_common_collections**
   - vectors : 벡터
   - strings : 문자열
   - hashmap : 해시맵
@@ -57,6 +57,10 @@
   - median_mod
   - pig_latin
   - department
+
+### ch09
+- **09_error**
+  - 
 
 
     
