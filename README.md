@@ -60,7 +60,11 @@
 
 ### ch09
 - **09_error**
-  - 
+  - panic : 패닉
+  - result : result
+  - panic_or_result : 패닉이냐 아니냐
 
-
+### ch10
+- **10_generic**
+  - data-types : 제네릭 데이터 타입
     
